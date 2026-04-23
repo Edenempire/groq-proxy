@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 
 const app = express();
-app.use(cors());
+app.use(cors()); // ← This enables CORS
 app.use(express.json());
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
